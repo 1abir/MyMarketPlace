@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="382.0" prefWidth="600.0" style="-fx-background-color: #99ffff;" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="newClient.RiceController">
+   <children>
+      <MenuBar fx:id="previousPagemenu" layoutX="3.0" layoutY="2.0" onDragDetected="#previousPageAction" prefHeight="22.0" prefWidth="590.0">
+        <menus>
+          <Menu fx:id="HomeMenu" mnemonicParsing="false" onAction="#HomeMenuAction" text="Home" />
+          <Menu fx:id="AddItemsMenu" mnemonicParsing="false" onAction="#AdditemsAction" text="Add items" />
+            <Menu fx:id="previousPage" mnemonicParsing="false" onAction="#previousPageAction" text="Previous Page" />
+        </menus>
+      </MenuBar>
+      <ListView fx:id="listView" layoutX="19.0" layoutY="43.0" prefHeight="315.0" prefWidth="554.0" />
+   </children>
+</AnchorPane>

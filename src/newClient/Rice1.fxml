@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="701.0" prefWidth="901.0" style="-fx-background-color: #25aa99;" xmlns="http://javafx.com/javafx/8.0.151" xmlns:fx="http://javafx.com/fxml/1" fx:controller="newClient.RiceController">
+   <children>
+      <ImageView fitHeight="739.0" fitWidth="1059.0" layoutX="1.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Images1/Crops/images1.jpeg" />
+         </image>
+      </ImageView>
+      <Button fx:id="addButton" layoutX="773.0" layoutY="13.0" mnemonicParsing="false" onAction="#addButtonAction" prefHeight="62.0" prefWidth="101.0" text="Add" textFill="#117c3c">
+         <font>
+            <Font size="23.0" />
+         </font>
+      </Button>
+      <Button fx:id="backButton" layoutX="44.0" layoutY="14.0" mnemonicParsing="false" onAction="#backButtonAction" opacity="0.43" prefHeight="62.0" prefWidth="101.0" text="Back" textFill="#117c3c">
+         <font>
+            <Font size="23.0" />
+         </font>
+      </Button>
+      <Text fill="#2908e4" layoutX="564.0" layoutY="51.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Are you a farmer?">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Text>
+      <Text fill="#e31009" layoutX="383.0" layoutY="65.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Rice" wrappingWidth="93.5992431640625">
+         <font>
+            <Font size="40.0" />
+         </font>
+      </Text>
+      <ListView fx:id="RiceListView" layoutX="51.0" layoutY="111.0" prefHeight="550.0" prefWidth="788.0" />
+   </children>
+</AnchorPane>

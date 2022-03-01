@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="701.0" prefWidth="901.0" style="-fx-background-color: #7595dd;" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="newClient.CropsHomeController">
+   <children>
+      <ImageView fitHeight="701.0" fitWidth="901.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Images1/Crops/multi-crops.jpg" />
+         </image>
+      </ImageView>
+      <AnchorPane layoutX="14.0" layoutY="14.0" prefHeight="300.0" prefWidth="300.0">
+         <children>
+            <ImageView fitHeight="300.0" fitWidth="300.0" layoutX="7.0" layoutY="7.0" opacity="0.97" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Images1/Crops/Maize/Button/maize.jpg" />
+               </image>
+            </ImageView>
+            <Button fx:id="maize" layoutX="7.0" layoutY="7.0" mnemonicParsing="false" onAction="#maizeAction" opacity="0.85" prefHeight="300.0" prefWidth="300.0" text="Maize" textFill="#218197">
+               <font>
+                  <Font size="30.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="524.0" layoutY="34.0" prefHeight="300.0" prefWidth="300.0">
+         <children>
+            <ImageView fitHeight="300.0" fitWidth="300.0" layoutX="11.0" layoutY="-11.0" opacity="0.95" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Images1/Crops/Rice/Button/shutterstock_102426532-web-1031x675.jpg" />
+               </image>
+            </ImageView>
+            <Button fx:id="rice" layoutX="12.0" layoutY="1.0" mnemonicParsing="false" onAction="#riceAction" opacity="0.69" prefHeight="300.0" prefWidth="300.0" text="Rice" textFill="#16576f">
+               <font>
+                  <Font size="30.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="321.0" layoutY="381.0" prefHeight="300.0" prefWidth="300.0">
+         <children>
+            <ImageView fitHeight="300.0" fitWidth="300.0" layoutX="1.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Images1/Crops/Wheat/bUTTON/Wheat.jpg" />
+               </image>
+            </ImageView>
+            <Button fx:id="wheat" layoutX="1.0" mnemonicParsing="false" onAction="#wheatAction" opacity="0.75" prefHeight="300.0" prefWidth="300.0" text="Wheat" textFill="#188caf">
+               <font>
+                  <Font size="30.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="44.0" layoutY="451.0" prefHeight="162.0" prefWidth="191.0">
+         <children>
+            <ImageView fitHeight="144.0" fitWidth="165.0" layoutX="31.0" layoutY="13.0" pickOnBounds="true" preserveRatio="true" />
+            <Button fx:id="othersButton" layoutX="37.0" layoutY="13.0" mnemonicParsing="false" onAction="#OthersButtonAction" opacity="0.7" prefHeight="150.0" prefWidth="155.0" text="Others" textFill="#218197">
+               <font>
+                  <Font size="30.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+      <Button fx:id="LogoutButton" layoutX="776.0" layoutY="655.0" mnemonicParsing="false" onAction="#logOutButtonAction" opacity="0.71" text="Log Out" />
+   </children>
+</AnchorPane>

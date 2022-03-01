@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="701.0" prefWidth="901.0" style="-fx-background-color: #12eeff;" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="newClient.WheatController">
+   <children>
+      <ImageView fitHeight="782.0" fitWidth="1197.0" layoutX="1.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Images1/Crops/Wheat/Wheat%20li%20jingwang%20istockphoto_16.jpg" />
+         </image>
+      </ImageView>
+      <Button fx:id="addButton" layoutX="770.0" layoutY="13.0" mnemonicParsing="false" onAction="#addButtonAction" prefHeight="62.0" prefWidth="101.0" text="Add" textFill="#117c3c">
+         <font>
+            <Font size="23.0" />
+         </font>
+      </Button>
+      <Button fx:id="backButton" layoutX="44.0" layoutY="14.0" mnemonicParsing="false" onAction="#backButtonAction" opacity="0.43" prefHeight="62.0" prefWidth="101.0" text="Back" textFill="#117c3c">
+         <font>
+            <Font size="23.0" />
+         </font>
+      </Button>
+      <Text fill="#2908e4" layoutX="544.0" layoutY="51.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Are you a farmer?">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Text>
+      <ListView fx:id="WheatListView" layoutX="61.0" layoutY="121.0" prefHeight="550.0" prefWidth="788.0" />
+   </children>
+</AnchorPane>
